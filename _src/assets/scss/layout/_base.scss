@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+html { font-size: 125% ; } /* 20px */
+
+body {
+    font-family: $font-principal;
+    font-weight: $font-weightDefault ;
+    font-size: $font-sizedefault ;
+    line-height: 1.5 ;
+    color: $color-greyRock ;
+    background-color: $color-whiteCotton ;
+    overflow:hidden;
+}
