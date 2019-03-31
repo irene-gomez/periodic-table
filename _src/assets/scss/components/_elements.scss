@@ -1,0 +1,64 @@
+.grid-elements {
+    display: grid;
+    grid-gap: rem(3px);
+}
+.grid-item {
+    padding: rem(10px) rem(40px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    grid-template-areas: 
+        "symbolElement nameElement nameElement"
+        "symbolElement numberAtomic weightAtomic";
+}
+.symbol {
+    grid-area: symbolElement;
+    font-size: rem(60px);
+    font-weight: 700 ;
+}
+
+.nameElement {
+    grid-area: nameElement;
+    font-size: rem(30px);
+    letter-spacing: 1px;
+}
+
+.atomicNumber {
+    grid-area: numberAtomic;
+    font-size: rem(18px);
+}
+
+.atomicWeight {
+    grid-area: weightAtomic;
+    text-align: right;
+    font-size: rem(18px);
+}
+
+.textLight {
+    color: $color-whiteSnow;
+}
+
+/*.grid-item:hover:not(.element5771):not(.element89103) {
+    transform: scale(1.2);
+    box-shadow: 0 8px 6px -6px rgba($color-blackNight, .7);
+    z-index: 100 ;
+    }
+
+    .grid-item .atomicNumber { font-size: .6em; }
+    .bigElement .atomicNumber { font-size: 1.2em; }
+    
+
+    .grid-item .atomicWeight { font-size: .6em; }
+    .bigElement .atomicWeight { font-size: 1.2em; }
+    
+    
+
+    .grid-item .symbol { font-size: 1.8em; }
+    .bigElement .symbol { font-size: 5em; }
+    
+
+    .grid-item .nameElement { font-size: .6em; }
+    .bigElement .nameElement { font-size: 1.2em; }
+*/

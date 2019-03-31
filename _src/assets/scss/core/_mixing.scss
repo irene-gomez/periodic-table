@@ -1,0 +1,4 @@
+@mixin drawSquare($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}

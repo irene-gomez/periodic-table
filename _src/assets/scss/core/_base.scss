@@ -1,0 +1,34 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    font-family: $font-principal;
+    font-weight: $font-weightDefault ;
+    font-size: $font-sizedefault;
+    line-height: 1.5;
+    color: $color-greyRock;
+    background-color: $color-whiteCotton;
+    overflow: hidden;
+}
+
+/* COLORS */
+.alkaliMetal { background-color: $color-greenGrass; }
+.alkalineEarth { background-color: $color-greenMint; }
+.transitionMetal { background-color: $color-greenWorm; }
+.basicMetal { background-color: $color-blueSea; }
+.semimetal { background-color: $color-bluePool; }
+.polyatomicNonMetal { background-color: $color-blueBubble; }
+.nonMetal { background-color: $color-blueCandy; }
+.nobleGas { background-color: $color-blueNight; }
+.unknow { background-color: $color-whiteRose; }
+.lanthanide { background-color: $color-blueBallon; }
+.actinide { background-color: $color-purpleLily; }
+/* END COLORS */

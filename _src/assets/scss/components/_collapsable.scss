@@ -1,0 +1,15 @@
+.collapsable {
+    background-color: $color-greyMouse;
+    padding: rem(10px) rem(25px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-greyGround;
+    &__title {
+        font-size: rem(30px);
+    }
+    &__icon-more {
+        @include drawSquare(25px, 25px);
+        cursor: pointer;
+    }
+}

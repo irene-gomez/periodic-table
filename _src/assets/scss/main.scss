@@ -1,21 +1,22 @@
 // Core
 @import './core/variables';
+@import './core/base';
+@import './core/mixing';
+@import './core/functions';
 // Layout
-@import './layout/base';
+@import './layout/key';
 // Components
+@import './components/collapsable';
+@import './components/elements';
 
 
 .groupOne ul {
     width: 100% ;
     height: 70vh ;
     display: grid ;
-    -ms-display: grid ;
     grid-template-columns: repeat(18, 1fr);
-    -ms-grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(7, 14.2%);
-    -ms-grid-template-rows: repeat(7, 14.2%);
     grid-gap: .2em;
-    -ms-grid-gap: .2em;
     }
 
 .groupTwo ul {
@@ -25,88 +26,18 @@
     left: 0 ;
     bottom: .2em;
     display: grid ;
-    -ms-display: grid ;
     grid-template-columns: repeat(18, 1fr);
-    -ms-grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(2, 50%);
-    -ms-grid-template-rows: repeat(2, 50%);
     grid-gap: .2em;
-    -ms-grid-gap: .2em;
     }
 
-.gridItem {
-    position: relative ;
-    transform: scale(1);
-    cursor: pointer ;
-    transition: all .15s ;
-    -webkit-font-smoothing: antialiased ;
-    -moz-osx-font-smoothing: antialiased ;
-    }
-
-.gridItem:hover:not(.element5771):not(.element89103) {
-    transform: scale(1.2);
-    box-shadow: 0 8px 6px -6px rgba($color-blackNight, .7);
-    z-index: 100 ;
-    }
-
-.atomicNumber {
-    position: absolute ;
-    top: .5em ;
-    left: .5em ;
-    }
-.gridItem .atomicNumber { font-size: .6em; }
-.bigElement .atomicNumber { font-size: 1.2em; }
-
-
-.atomicWeight {
-    position: absolute ;
-    top: .5em ;
-    right: .5em ;    
-    }
-.gridItem .atomicWeight { font-size: .6em; }
-.bigElement .atomicWeight { font-size: 1.2em; }
-
-
-.symbol {
-    font-weight: 700 ;
-    position: absolute ;
-    top: 50% ;
-    left: 50% ;
-    transform: translate(-50%, -50%);
-    }
-.gridItem .symbol { font-size: 1.8em; }
-.bigElement .symbol { font-size: 5em; }
-
-
-.nameElement {
-    position: absolute ;
-    bottom: .5em ;
-    left: 50% ;
-    transform: translateX(-50%);
-    }
-.gridItem .nameElement { font-size: .6em; }
-.bigElement .nameElement { font-size: 1.2em; }
-
-
-.textLight {
-    color: $color-whiteSnow;
-}
 
 
 
-/* COLORS */
-.alkaliMetal { background-color: $color-greenGrass; }
-.alkalineEarth { background-color: $color-greenMint; }
-.transitionMetal { background-color: $color-greenWorm; }
-.basicMetal { background-color: $color-blueSea; }
-.semimetal { background-color: $color-bluePool; }
-.polyatomicNonMetal { background-color: $color-blueBubble; }
-.nonMetal { background-color: $color-blueCandy; }
-.nobleGas { background-color: $color-blueNight; }
-.unknow { background-color: $color-whiteRose; }
-.lanthanide { background-color: $color-blueBallon; }
-.actinide { background-color: $color-purpleLily; }
-/* END COLORS */
+
+
+
+
 
 
 
@@ -115,54 +46,6 @@
 .element57, .element89 { grid-column-start: -16 ; }
 
 
-.firstColumn {
-    grid-column: 4 / span 2;
-    -ms-grid-column: 8 / span 3;
-    grid-row: 2 / span 2;   
-    -ms-grid-row: 2 / span 2;   
-    }
-
-.secondColumn {
-    grid-column: 6 / span 3;
-    -ms-grid-column: 11 / span 2;
-    grid-row: 2 / span 2;    
-    -ms-grid-row: 2 / span 2;    
-    }
-
-.thirdColumn {
-    grid-column: 9 / span 2;
-    -ms-grid-column: 11 / span 2;
-    grid-row: 2 / span 2;    
-    -ms-grid-row: 2 / span 2;    
-    }
-
-.fourthColumn {
-    grid-column: 11 / span 2;
-    -ms-grid-column: 11 / span 2;
-    grid-row: 2 / span 2;    
-    -ms-grid-row: 2 / span 2;    
-    }
-
-.colorClasification div {
-    margin-bottom: .75rem ;
-    font-size: 0 ;
-    }
-
-.colorClasification p {
-    font-size: .86rem;
-    display: inline-block;
-    line-height: 1em ;
-    vertical-align: top;
-    }
-
-.squareColor {
-    display: inline-block;
-    vertical-align: top;
-    width: .86rem ;
-    height: .86rem ;
-    margin-right: .4rem ;
-    box-sizing: border-box ;
-    }
 
 .title {
     position: absolute ;

@@ -1,0 +1,18 @@
+.key-info {
+    display: none;
+}
+
+.color-clasification {
+  &__text {
+    font-size: rem(20px);
+    display: inline-block;
+    line-height: 1em;
+    vertical-align: top;
+  }
+  &__square {
+    display: inline-block;
+    vertical-align: top;
+    @include drawSquare(rem(20px), rem(20px));
+    margin-right: 0.4rem;
+  }
+}
