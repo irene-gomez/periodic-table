@@ -1,6 +1,14 @@
+#collapsable--show {
+    &.hidden {
+        display: none;
+    }
+    &.show {
+        display: block;
+    }
+}
 .grid-elements {
-    display: grid;
-    grid-gap: rem(3px);
+        display: grid;
+        grid-gap: rem(3px);
 }
 .grid-item {
     padding: rem(10px) rem(40px);

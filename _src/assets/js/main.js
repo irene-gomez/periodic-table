@@ -1,11 +1,25 @@
-var $ventana = $(window) ,
-    $body = $("body") ,
-    $elemento = $(".gridItem") ;
+'use strict';
+
+// var $ventana = $(window) ,
+//     $body = $("body") ,
+//     $elemento = $(".gridItem") ;
+
+const collapsableImg = document.getElementsByClassName('collapsable__icon-more');
+const itemPeriodicTable = document.getElementById('collapsable--show');
+console.log(itemPeriodicTable.classList.contains('hide'));
+
+if (itemPeriodicTable.classList.contains('hidden')) {
+    console.log('borro hide');
+    itemPeriodicTable.classList.remove('hidden');
+} else {
+    console.log('pongo hide');
+    itemPeriodicTable.classList.add('hidden');
+}
 
 
 
 
-
+/*
 $elemento.click(crearElementoGrande);
 
 function crearElementoGrande() {
@@ -49,3 +63,4 @@ function cerrarElemento() {
             $(this).remove() ;
     });
 }
+*/
