@@ -1,0 +1,17 @@
+.iconsLib {
+    /* important so that they are not shown at the top of our page */
+    display: none ;
+}
+
+.ico {
+    /* draw our icon */
+    @include drawSquare(25px, 25px);
+    cursor: pointer;   
+    display: block ; /* to display the previously hidden icon */
+}
+
+.ico svg {
+    width: 100% ;
+    height: 100% ;
+    fill: currentColor ; /* to take his father's color. In this case '.priAction' */
+}

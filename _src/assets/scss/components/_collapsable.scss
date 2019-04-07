@@ -12,4 +12,10 @@
         @include drawSquare(25px, 25px);
         cursor: pointer;
     }
+    &--show {
+        display: block;
+    }
+    &--hide {
+        display: none;
+    }
 }
