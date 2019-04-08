@@ -5,12 +5,12 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $color-greyGround;
+    cursor: pointer;
     &__title {
         font-size: rem(30px);
     }
     &__icon-more {
         @include drawSquare(25px, 25px);
-        cursor: pointer;
     }
     &--show {
         display: block;

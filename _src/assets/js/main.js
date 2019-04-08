@@ -1,25 +1,24 @@
 'use strict';
 
-const collapsablePlusAlkaliEl = document.querySelector('.plus__alkali');
-const collapsablePlusAlkalineEl = document.querySelector('.plus__alkaline');
-const collapsablePlusTransitionEl = document.querySelector('.plus__transition');
-const collapsablePlusBasicEl = document.querySelector('.plus__basic');
-const collapsablePlusSemiEl = document.querySelector('.plus__semi');
-const collapsablePlusPolyatomicEl = document.querySelector('.plus__poliatomic');
-const collapsablePlusNonMetalEl = document.querySelector('.plus__nonmetal');
-const collapsablePlusNobleEl = document.querySelector('.plus__noble');
-const collapsablePlusLanthanideEl = document.querySelector('.plus__lanthanide');
-const collapsablePlusActinideEl = document.querySelector('.plus__actinide');
-const collapsablePlusUnknowEl = document.querySelector('.plus__unknow');
+// const collapsablePlusAlkaliEl = document.querySelector('.plus__alkali');
+// const collapsablePlusAlkalineEl = document.querySelector('.plus__alkaline');
+// const collapsablePlusTransitionEl = document.querySelector('.plus__transition');
+// const collapsablePlusBasicEl = document.querySelector('.plus__basic');
+// const collapsablePlusSemiEl = document.querySelector('.plus__semi');
+// const collapsablePlusPolyatomicEl = document.querySelector('.plus__poliatomic');
+// const collapsablePlusNonMetalEl = document.querySelector('.plus__nonmetal');
+// const collapsablePlusNobleEl = document.querySelector('.plus__noble');
+// const collapsablePlusLanthanideEl = document.querySelector('.plus__lanthanide');
+// const collapsablePlusActinideEl = document.querySelector('.plus__actinide');
+// const collapsablePlusUnknowEl = document.querySelector('.plus__unknow');
+const collapsableEl = document.querySelectorAll('.collapsable');
+
 
 function handlerClickPlus(e) {
-    const moreInfoEl = e.currentTarget;
-    // Madre del icono
-    const collapsableInfo = moreInfoEl.parentElement;
-    // Tía del icono
+    const collapsableInfo = e.currentTarget;
     const panelToShow = collapsableInfo.nextElementSibling;
     // Svg del icono
-    const iconEl = moreInfoEl.firstElementChild;
+    const iconEl = collapsableInfo.lastElementChild.firstElementChild;
 
     // Mostrar simbolo menos para cerrar panel
     if (iconEl.innerHTML === '<use xlink:href="#ico-more"></use>'){
@@ -32,17 +31,21 @@ function handlerClickPlus(e) {
     panelToShow.classList.toggle('collapsable--hide');
 }
 
-collapsablePlusAlkaliEl.addEventListener('click', handlerClickPlus);
-collapsablePlusAlkalineEl.addEventListener('click', handlerClickPlus);
-collapsablePlusTransitionEl.addEventListener('click', handlerClickPlus);
-collapsablePlusBasicEl.addEventListener('click', handlerClickPlus);
-collapsablePlusSemiEl.addEventListener('click', handlerClickPlus);
-collapsablePlusPolyatomicEl.addEventListener('click', handlerClickPlus);
-collapsablePlusNonMetalEl.addEventListener('click', handlerClickPlus);
-collapsablePlusNobleEl.addEventListener('click', handlerClickPlus);
-collapsablePlusLanthanideEl.addEventListener('click', handlerClickPlus);
-collapsablePlusActinideEl.addEventListener('click', handlerClickPlus);
-collapsablePlusUnknowEl.addEventListener('click', handlerClickPlus);
+for(let i=0; i < collapsableEl.length; i++) {
+    collapsableEl[i].addEventListener('click', handlerClickPlus);
+    console.log('click');
+}
+// collapsablePlusAlkaliEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusAlkalineEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusTransitionEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusBasicEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusSemiEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusPolyatomicEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusNonMetalEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusNobleEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusLanthanideEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusActinideEl.addEventListener('click', handlerClickPlus);
+// collapsablePlusUnknowEl.addEventListener('click', handlerClickPlus);
 
 
 
